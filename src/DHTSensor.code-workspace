@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../DHTSensor"
+		},
+		{
+			"name": "RGB_LED",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
