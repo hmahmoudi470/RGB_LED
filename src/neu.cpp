@@ -1,48 +1,48 @@
 /*#include <Arduino.h>
 
 // Definition der Pins
-int LEDblau = 3; 
-int LEDrot = 5; 
-int LEDgruen = 7; // Korrigiert auf Pin 6
+int LEDb = 3; 
+int LEDr = 5; 
+int LEDg = 7; // Korrigiert auf Pin 6
 
 int p = 2000; // Pause 1 Sekunde
 int hell = 200; // Helligkeitswert für die Farben
 int dunkel = 0; // 0V = Aus
 
 void setup() {
-  pinMode(LEDblau, OUTPUT);
-  pinMode(LEDgruen, OUTPUT);
-  pinMode(LEDrot, OUTPUT);
+  pinMode(LEDb, OUTPUT);
+  pinMode(LEDg, OUTPUT);
+  pinMode(LEDr, OUTPUT);
 }
 
 void loop() {
-  // 1. Erst Rot
-  analogWrite(LEDrot, hell);
+  // 1. Erst r
+  analogWrite(LEDr, hell);
   delay(p);
-  analogWrite(LEDrot, dunkel);
+  analogWrite(LEDr, dunkel);
 
-  // 2. Dann Blau
-  analogWrite(LEDblau, hell);
+  // 2. Dann b
+  analogWrite(LEDb, hell);
   delay(p);
-  analogWrite(LEDblau, dunkel);
+  analogWrite(LEDb, dunkel);
 
   // 3. Danach Grün
-  analogWrite(LEDgruen, hell);
+  analogWrite(LEDg, hell);
   delay(p);
-  analogWrite(LEDgruen, dunkel);
+  analogWrite(LEDg, dunkel);
 
   // 4. Am Ende unterschiedliche Farben (Mischfarben)
-  // Beispiel: Rot + Blau = Lila
-  analogWrite(LEDrot, hell);
-  analogWrite(LEDblau, hell);
+  // Beispiel: r + b = Lila
+  analogWrite(LEDr, hell);
+  analogWrite(LEDb, hell);
   delay(p);
-  analogWrite(LEDrot, dunkel);
-  analogWrite(LEDblau, dunkel);
+  analogWrite(LEDr, dunkel);
+  analogWrite(LEDb, dunkel);
 
-  // Beispiel: Blau + Grün = Cyan
-  analogWrite(LEDblau, hell);
-  analogWrite(LEDgruen, hell);
+  // Beispiel: b + Grün = Cyan
+  analogWrite(LEDb, hell);
+  analogWrite(LEDg, hell);
   delay(p);
-  analogWrite(LEDblau, dunkel);
-  analogWrite(LEDgruen, dunkel);
+  analogWrite(LEDb, dunkel);
+  analogWrite(LEDg, dunkel);
 }*/
